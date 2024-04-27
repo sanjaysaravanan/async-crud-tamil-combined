@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { createProd, readSingleProduct, editProd } from "../apis/crud-ops";
+// import { createProd, editProd } from "../apis/crud-ops";
+import {
+  readSingleProduct,
+  editProd,
+  createProd,
+} from "../apis/crud-ops-axios";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
 const ProductForm = () => {

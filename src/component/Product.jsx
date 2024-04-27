@@ -14,9 +14,7 @@ const Product = ({ title, image, qty, price, id, removeProduct }) => {
       <button onClick={() => removeProduct(id)}>Delete</button>
       <button
         onClick={() => {
-          navigate(`/add-product?edit=true&prodId=${id}`, {
-            state: { title, image, qty, price, id },
-          });
+          navigate(`/add-product?edit=true&prodId=${id}`);
         }}
       >
         Edit

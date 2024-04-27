@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Product from "../component/Product";
-import { deleteProduct, readAllData } from "../apis/crud-ops";
+// import { deleteProduct } from "../apis/crud-ops";
+import { readAllData, deleteProduct } from "../apis/crud-ops-axios";
 import { useNavigate } from "react-router-dom";
 
 const Products = () => {
